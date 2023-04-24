@@ -1,0 +1,8 @@
+Steps to run the RL for WMLES:
+
+1) Download smarties and intall according to instructions (https://github.com/cselab/smarties)
+
+2) Make the code in folder code/
+- need to change Makefile to specify location for FFTW (with MPI capabilities)
+
+3) Move compiled "app_main" to script/ folder and run submit.sh

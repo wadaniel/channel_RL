@@ -1,0 +1,22 @@
+! domain size nx ny nz
+ 130 41 66
+! CFL (or fixed dT if negative)
+ -1e-2 
+! viscosity
+  2.061855670103093e-05
+! Pressure gradient dPdx, x_mass_cte (0->use dPdx, 1->constant mass flow)
+ 0.001705857682121 0
+! LES model (0: no model 1: constant smagorinsky 2: DSM 3: AMD 4: Vreman)
+ 3
+! nsteps, nsave, nstats, nmonitor
+ 20000   20001   1000   1000
+! input flow field file
+ '../case_folder/channel1e4_AMD_eqwm.init'
+! output flow field file
+ '../test/channel2000_AMD_RL'
+! first number for output flow field
+ 0
+! random initial condition 0->no (reads previous file), 1->yes
+ 0
+! (SGS) BC for eddy vicosity: 1->Dirichlet, 0->Neumann
+ 1
