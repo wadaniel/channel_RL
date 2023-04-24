@@ -11,7 +11,7 @@
 ! nsteps, nsave, nstats, nmonitor
  20000   20001   1000   1000
 ! input flow field file
- '../case_folder/channel1e4_AMD_eqwm.init'
+ '../case_folder/channel2000_AMD_RL.init'
 ! output flow field file
  '../test/channel2000_AMD_RL'
 ! first number for output flow field
