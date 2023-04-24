@@ -15,7 +15,8 @@ M_FCFLAGS = -I$(PREFIX)/include -I.
 MPI_EXTRA_LIB = -lmpi_cxx -lstdc++
 M_LDFLAGS = -fopenmp -L$(PREFIX)/lib -lsmarties $(MPI_EXTRA_LIB)
 #M_CHFLAGS = -lfftw3_mpi -lfftw3 -L$(OPENBLAS_ROOT)/lib -lopenblas -I$(OPENBLAS_ROOT) -I$(FFTW_INCLUDE) -L$(FFTW_LIB)
-M_CHFLAGS = -lfftw3_mpi -lfftw3 -lopenblas -I$(FFTW_INCLUDE) -L$(FFTW_LIB)
+M_CHFLAGS = -lfftw3_mpi -lfftw3 -lopenblas \
+	-I$(FFTW_ROOT)/include -L$(FFTW_ROOT)/lib
 
 C = \
 mpi.o\
